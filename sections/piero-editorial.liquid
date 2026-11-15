@@ -1,0 +1,170 @@
+{%- comment -%}
+  Piero Editorial & Shipping Section
+  Kadın Pijama & Sleepwear
+{%- endcomment -%}
+<div class="section-wrapper">
+  <section class="piero-editorial" aria-labelledby="piero-editorial-title">
+    <div class="piero-editorial__copy">
+      <p class="piero-editorial__eyebrow">{{ section.settings.eyebrow | default: 'PIERO LOUNGE & SLEEP' }}</p>
+      <h2 id="piero-editorial-title">{{ section.settings.heading | default: 'Konforu ve zarafeti her gece yeniden tanımla.' }}</h2>
+      <p>{{ section.settings.paragraph_1 | default: 'Günlük hayatın koşuşturmacasını geride bıraktığınızda, teninizle buluşan yumuşaklık her şeydir. En kaliteli modal lifleri, organik pamuk ve dökümlü saten kumaşlarla tasarlanan kadın pijama koleksiyonumuzla evdeki her anınızı lükse dönüştürün.' }}</p>
+      <p>{{ section.settings.paragraph_2 | default: 'Zahmetsiz şıklık sunan dökümlü kalıplar, dikişsiz konfor detayları ve dingin renk tonlarıyla gardırobunuzun imza pijama ve ev giyimi parçalarını keşfedin.' }}</p>
+      <a href="{{ section.settings.link_url | default: '/collections/all' }}" class="piero-editorial__link">
+        {{ section.settings.link_label | default: 'Yeni Sezonu Keşfet' }}
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+
+    <div class="piero-editorial__visual">
+      {%- if section.settings.image != blank -%}
+        {{
+          section.settings.image
+          | image_url: width: 1200
+          | image_tag:
+            loading: 'lazy',
+            alt: section.settings.heading,
+            widths: '400, 600, 800, 1000, 1200'
+        }}
+      {%- else -%}
+        <div style="width:100%; height:100%; min-height:480px; background: linear-gradient(135deg, #2b2b29 0%, #171715 100%); display:flex; align-items:center; justify-content:center; color:#ffffff;">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" style="opacity:0.35;">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+          </svg>
+        </div>
+      {%- endif -%}
+
+      <div class="piero-editorial__signature">
+        <strong>{{ section.settings.signature_brand | default: 'PIERO' }}</strong>
+        <span>{{ section.settings.signature_sub | default: 'WOMAN · PREMIUM SLEEPWEAR' }}</span>
+      </div>
+    </div>
+  </section>
+
+  {%- if section.settings.show_shipping_tracker -%}
+    <section class="piero-shipping" aria-labelledby="piero-shipping-title">
+      <div class="piero-shipping__content">
+        <p class="piero-shipping__eyebrow">{{ section.settings.shipping_eyebrow | default: 'SİPARİŞİM NEREDE?' }}</p>
+        <h2 id="piero-shipping-title">{{ section.settings.shipping_title | default: 'Kargonuzu kolayca takip edin' }}</h2>
+        <p>{{ section.settings.shipping_desc | default: 'Sipariş numaranız ve e-posta adresinizle kargo hareketlerinize saniyeler içinde ulaşın.' }}</p>
+        <a class="piero-shipping__button" href="{{ section.settings.shipping_link | default: '/pages/kargo-takip' }}">
+          {{ section.settings.shipping_button_label | default: 'Kargo Takip' }}
+        </a>
+        <small>{{ section.settings.shipping_note | default: 'Türkiye’nin her yerine ücretsiz ve güvenli teslimat.' }}</small>
+      </div>
+    </section>
+  {%- endif -%}
+</div>
+
+{% schema %}
+{
+  "name": "Piero Hikaye & Kargo",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Hikaye Kartı (Editorial)"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Üst Başlık (Eyebrow)",
+      "default": "PIERO LOUNGE & SLEEP"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Ana Başlık",
+      "default": "Konforu ve zarafeti her gece yeniden tanımla."
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_1",
+      "label": "1. Paragraf",
+      "default": "Günlük hayatın koşuşturmacasını geride bıraktığınızda, teninizle buluşan yumuşaklık her şeydir. En kaliteli modal lifleri, organik pamuk ve dökümlü saten kumaşlarla tasarlanan kadın pijama koleksiyonumuzla evdeki her anınızı lükse dönüştürün."
+    },
+    {
+      "type": "textarea",
+      "id": "paragraph_2",
+      "label": "2. Paragraf",
+      "default": "Zahmetsiz şıklık sunan dökümlü kalıplar, dikişsiz konfor detayları ve dingin renk tonlarıyla gardırobunuzun imza pijama ve ev giyimi parçalarını keşfedin."
+    },
+    {
+      "type": "text",
+      "id": "link_label",
+      "label": "Buton Metni",
+      "default": "Yeni Sezonu Keşfet"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Buton Linki"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Görsel"
+    },
+    {
+      "type": "text",
+      "id": "signature_brand",
+      "label": "İmza Marka Adı",
+      "default": "PIERO"
+    },
+    {
+      "type": "text",
+      "id": "signature_sub",
+      "label": "İmza Alt Metin",
+      "default": "WOMAN · PREMIUM SLEEPWEAR"
+    },
+    {
+      "type": "header",
+      "content": "Kargo Takip Kutusu"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_shipping_tracker",
+      "label": "Kargo takip kutusunu göster",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "shipping_eyebrow",
+      "label": "Kargo Üst Başlık",
+      "default": "SİPARİŞİM NEREDE?"
+    },
+    {
+      "type": "text",
+      "id": "shipping_title",
+      "label": "Kargo Başlık",
+      "default": "Kargonuzu kolayca takip edin"
+    },
+    {
+      "type": "textarea",
+      "id": "shipping_desc",
+      "label": "Kargo Açıklama",
+      "default": "Sipariş numaranız ve e-posta adresinizle kargo hareketlerinize saniyeler içinde ulaşın."
+    },
+    {
+      "type": "text",
+      "id": "shipping_button_label",
+      "label": "Kargo Buton Metni",
+      "default": "Kargo Takip"
+    },
+    {
+      "type": "url",
+      "id": "shipping_link",
+      "label": "Kargo Takip Linki"
+    },
+    {
+      "type": "text",
+      "id": "shipping_note",
+      "label": "Kargo Alt Not",
+      "default": "Türkiye’nin her yerine ücretsiz ve güvenli teslimat."
+    }
+  ],
+  "presets": [
+    {
+      "name": "Piero Hikaye & Kargo"
+    }
+  ]
+}
+{% endschema %}

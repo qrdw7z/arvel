@@ -1,0 +1,157 @@
+<section class="piero-categories-section section-spacing" aria-label="Kadın Pijama Koleksiyonları">
+  <div class="piero-section-header">
+    <div class="piero-eyebrow">{{ section.settings.eyebrow | default: 'ÖZEL SEÇKİ' }}</div>
+    <h2>{{ section.settings.heading | default: 'Koleksiyonları Keşfet' }}</h2>
+    <p>{{ section.settings.subheading | default: 'İpeksi satenden doğal modala, tarzınıza en uygun kadın pijama modelleri' }}</p>
+  </div>
+
+  <div class="piero-categories-grid">
+    {%- for block in section.blocks -%}
+      <a href="{{ block.settings.collection_url | default: '/collections/all' }}" class="piero-category-card" {{ block.shopify_attributes }}>
+        {%- if block.settings.image != blank -%}
+          {{
+            block.settings.image
+            | image_url: width: 800
+            | image_tag:
+              loading: 'lazy',
+              class: 'piero-category-card__image',
+              alt: block.settings.title
+          }}
+        {%- else -%}
+          <div class="piero-category-card__image" style="background: linear-gradient(135deg, #2b2b29 0%, #171715 100%);"></div>
+        {%- endif -%}
+
+        {%- if block.settings.badge != blank -%}
+          <span class="piero-category-card__badge">{{ block.settings.badge }}</span>
+        {%- endif -%}
+
+        <div class="piero-category-card__overlay">
+          <h3 class="piero-category-card__title">{{ block.settings.title }}</h3>
+          {%- if block.settings.subtitle != blank -%}
+            <p class="piero-category-card__sub">{{ block.settings.subtitle }}</p>
+          {%- endif -%}
+          <span class="piero-category-card__action">
+            Koleksiyonu İncele <span aria-hidden="true">→</span>
+          </span>
+        </div>
+      </a>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Piero Kategori Seçkisi",
+  "settings": [
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Üst Başlık",
+      "default": "ÖZEL SEÇKİ"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Ana Başlık",
+      "default": "Koleksiyonları Keşfet"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Alt Başlık",
+      "default": "İpeksi satenden doğal modala, tarzınıza en uygun kadın pijama modelleri"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category_item",
+      "name": "Kategori Kartı",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Kategori Görseli"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Kategori Başlığı",
+          "default": "Saten Pijama Takımları"
+        },
+        {
+          "type": "text",
+          "id": "subtitle",
+          "label": "Alt Bilgi",
+          "default": "Lüks & Dökümlü İpeksi Kumaş"
+        },
+        {
+          "type": "text",
+          "id": "badge",
+          "label": "Rozet (Opsiyonel)",
+          "default": "Çok Satan"
+        },
+        {
+          "type": "url",
+          "id": "collection_url",
+          "label": "Koleksiyon Linki"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Piero Kategori Seçkisi",
+      "blocks": [
+        {
+          "type": "category_item",
+          "settings": {
+            "title": "Saten Pijama Takımları",
+            "subtitle": "Lüks & Dökümlü İpeksi Kumaş",
+            "badge": "Yeni Sezon"
+          }
+        },
+        {
+          "type": "category_item",
+          "settings": {
+            "title": "Modal & Pamuklu Pijamalar",
+            "subtitle": "Nefes Alan Yumuşak Günlük Doku",
+            "badge": "En Çok Tercih Edilen"
+          }
+        },
+        {
+          "type": "category_item",
+          "settings": {
+            "title": "Gecelik & Sabahlık Modelleri",
+            "subtitle": "Zarif & Dökümlü Çeyizlik Tasarımlar",
+            "badge": "Lüks Seri"
+          }
+        },
+        {
+          "type": "category_item",
+          "settings": {
+            "title": "Şortlu Pijama Takımları",
+            "subtitle": "Yazlık & Hafif Konforlu Setler",
+            "badge": "Fırsat"
+          }
+        },
+        {
+          "type": "category_item",
+          "settings": {
+            "title": "Ev Giyimi & Loungewear",
+            "subtitle": "Evinizde Şık & Rahat Kombinler",
+            "badge": "Trend"
+          }
+        },
+        {
+          "type": "category_item",
+          "settings": {
+            "title": "Çeyiz & Özel Koleksiyon",
+            "subtitle": "Gelinlik & Özel Anlar İçin Takımlar",
+            "badge": "Özel Koleksiyon"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

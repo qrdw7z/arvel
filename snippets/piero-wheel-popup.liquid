@@ -1,0 +1,48 @@
+{%- comment -%}
+  Piero Premium - Interactive Spin Wheel Popup
+  Kadın Pijama & Sleepwear
+{%- endcomment -%}
+<dialog
+  id="piero-wheel-popup"
+  class="piero-wheel-popup"
+  aria-labelledby="piero-wheel-title"
+  aria-describedby="piero-wheel-description"
+>
+  <div class="piero-wheel-popup__panel">
+    <button class="piero-wheel-popup__close" type="button" aria-label="Kapat" data-wheel-close>×</button>
+    <div class="piero-wheel-popup__wheel-area" aria-hidden="true">
+      <div class="piero-wheel-popup__pointer"></div>
+      <div class="piero-wheel-popup__wheel" data-wheel>
+        <span>%5</span>
+        <span>%10</span>
+        <span>%15</span>
+        <span>200₺</span>
+        <span>100₺</span>
+      </div>
+    </div>
+    <div class="piero-wheel-popup__content">
+      <p class="piero-wheel-popup__eyebrow">PIERO LOUNGE & SLEEP</p>
+      <h2 id="piero-wheel-title">Şansını Çevir</h2>
+      <p id="piero-wheel-description">Yeni sezon kadın pijama koleksiyonumuza özel indirim fırsatını hemen yakala.</p>
+      <button class="piero-wheel-popup__spin button" type="button" data-wheel-spin>ÇARKI ÇEVİR</button>
+      <div class="piero-wheel-popup__result" aria-live="polite" data-wheel-result></div>
+      {% form 'customer', class: 'piero-wheel-popup__form', data-wheel-form: '' %}
+        <input type="hidden" name="contact[tags]" value="newsletter,wheel-popup,kadin-pijama">
+        <label class="visually-hidden" for="PieroWheelEmail">E-posta adresi</label>
+        <div class="piero-wheel-popup__email">
+          <input
+            id="PieroWheelEmail"
+            type="email"
+            name="contact[email]"
+            autocomplete="email"
+            placeholder="E-posta adresinizi girin"
+            required
+          >
+          <button type="submit">KUPONU KAYDET</button>
+        </div>
+      {% endform %}
+      <p class="piero-wheel-popup__note">Kupon kodunuz siparişinizde anında geçerlidir. İlk alışverişe özeldir.</p>
+    </div>
+  </div>
+</dialog>
+<script src="{{ 'piero-wheel-popup.js' | asset_url }}" defer="defer"></script>

@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "main": {
@@ -16,7 +7,7 @@
           "type": "disclosures",
           "name": "t:names.disclosures",
           "settings": {
-            "heading": "\u00dcr\u00fcn Detaylar\u0131 & Bilgilendirme",
+            "heading": "Ürün Detayları & Bilgilendirme",
             "heading_preset": "h5",
             "open_by_default": false,
             "icon": "caret",
@@ -33,7 +24,7 @@
             "row_fabric": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Kuma\u015f & Bak\u0131m Bilgisi",
+                "heading": "Kumaş & Bakım Bilgisi",
                 "open_by_default": true,
                 "icon": "washing"
               },
@@ -41,7 +32,7 @@
                 "text_fabric": {
                   "type": "text",
                   "settings": {
-                    "text": "<p><strong>Kuma\u015f \u00d6zelli\u011fi:</strong> %100 L\u00fcks \u0130peksi Dokulu Saten / Nefes Alan Do\u011fal Modal lifleri.<br/>Terletmeyen, tenle b\u00fct\u00fcnle\u015fen ve d\u00f6k\u00fcml\u00fc yap\u0131s\u0131yla g\u00fcn boyu ve gece maksimum konfor sunar.<br/><br/><strong>Y\u0131kama Talimat\u0131:</strong> Maksimum 30\u00b0C'de hassas/elde y\u0131kama program\u0131nda benzer renklerle y\u0131kay\u0131n\u0131z. A\u011fart\u0131c\u0131 veya leke \u00e7\u0131kar\u0131c\u0131 kullanmay\u0131n\u0131z. D\u00fc\u015f\u00fck \u0131s\u0131da tersten \u00fct\u00fcleyiniz.</p>",
+                    "text": "<p><strong>Kumaş Özelliği:</strong> %100 Lüks İpeksi Dokulu Saten / Nefes Alan Doğal Modal lifleri.<br/>Terletmeyen, tenle bütünleşen ve dökümlü yapısıyla gün boyu ve gece maksimum konfor sunar.<br/><br/><strong>Yıkama Talimatı:</strong> Maksimum 30°C'de hassas/elde yıkama programında benzer renklerle yıkayınız. Ağartıcı veya leke çıkarıcı kullanmayınız. Düşük ısıda tersten ütüleyiniz.</p>",
                     "width": "100%"
                   }
                 }
@@ -53,7 +44,7 @@
             "row_sizing": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Beden & Kal\u0131p Rehberi",
+                "heading": "Beden & Kalıp Rehberi",
                 "open_by_default": false,
                 "icon": "ruler"
               },
@@ -61,7 +52,7 @@
                 "text_sizing": {
                   "type": "text",
                   "settings": {
-                    "text": "<p><strong>Kal\u0131p:</strong> Standart Rahat / D\u00f6k\u00fcml\u00fc Kesim.<br/>Kendi bedeninizi tercih etmeniz \u00f6nerilir. Bol ve d\u00f6k\u00fcml\u00fc pijama g\u00f6r\u00fcn\u00fcm\u00fc sevenler i\u00e7in bir beden b\u00fcy\u00fck tercih uygundur.<br/><br/><strong>\u00d6l\u00e7\u00fc Rehberi:</strong><br/>\u2022 S Beden: 36-38 | G\u00f6\u011f\u00fcs: 84-88 cm | Bel: 66-70 cm<br/>\u2022 M Beden: 38-40 | G\u00f6\u011f\u00fcs: 89-93 cm | Bel: 71-75 cm<br/>\u2022 L Beden: 40-42 | G\u00f6\u011f\u00fcs: 94-98 cm | Bel: 76-80 cm<br/>\u2022 XL Beden: 42-44 | G\u00f6\u011f\u00fcs: 99-105 cm | Bel: 81-87 cm</p>",
+                    "text": "<p><strong>Kalıp:</strong> Standart Rahat / Dökümlü Kesim.<br/>Kendi bedeninizi tercih etmeniz önerilir. Bol ve dökümlü pijama görünümü sevenler için bir beden büyük tercih uygundur.<br/><br/><strong>Ölçü Rehberi:</strong><br/>• S Beden: 36-38 | Göğüs: 84-88 cm | Bel: 66-70 cm<br/>• M Beden: 38-40 | Göğüs: 89-93 cm | Bel: 71-75 cm<br/>• L Beden: 40-42 | Göğüs: 94-98 cm | Bel: 76-80 cm<br/>• XL Beden: 42-44 | Göğüs: 99-105 cm | Bel: 81-87 cm</p>",
                     "width": "100%"
                   }
                 }
@@ -73,7 +64,7 @@
             "row_shipping": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "\u00dccretsiz Kargo & Kolay De\u011fi\u015fim",
+                "heading": "Ücretsiz Kargo & Kolay Değişim",
                 "open_by_default": false,
                 "icon": "truck"
               },
@@ -81,7 +72,7 @@
                 "text_shipping": {
                   "type": "text",
                   "settings": {
-                    "text": "<p><strong>H\u0131zl\u0131 ve Sigortal\u0131 G\u00f6nderim:</strong> T\u00fcrkiye genelinde t\u00fcm sipari\u015flerinizde kargo \u00fccretsizdir. Hafta i\u00e7i saat 14:00'e kadar olu\u015fturulan sipari\u015fler ayn\u0131 g\u00fcn kargoya teslim edilir.<br/><br/><strong>Ko\u015fulsuz De\u011fi\u015fim & \u0130ade:</strong> \u00dcr\u00fcn\u00fc teslim ald\u0131ktan sonra 14 g\u00fcn i\u00e7erisinde orijinal kutusu, etiketi ve hijyen koruma band\u0131 bozulmam\u0131\u015f \u015fekilde kolayca de\u011fi\u015fim veya iade edebilirsiniz.</p>",
+                    "text": "<p><strong>Hızlı ve Sigortalı Gönderim:</strong> Türkiye genelinde tüm siparişlerinizde kargo ücretsizdir. Hafta içi saat 14:00'e kadar oluşturulan siparişler aynı gün kargoya teslim edilir.<br/><br/><strong>Koşulsuz Değişim & İade:</strong> Ürünü teslim aldıktan sonra 14 gün içerisinde orijinal kutusu, etiketi ve hijyen koruma bandı bozulmamış şekilde kolayca değişim veya iade edebilirsiniz.</p>",
                     "width": "100%"
                   }
                 }

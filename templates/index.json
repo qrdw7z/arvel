@@ -1,12 +1,3 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
   "sections": {
     "hero_jVaWmY": {
@@ -176,19 +167,6 @@
         "padding-block-start": 14,
         "padding-block-end": 14,
         "gap_between_elements": 32
-      }
-    },
-    "piero_features_bar": {
-      "type": "piero-features-bar",
-      "settings": {
-        "feature_1_title": "TÜM TÜRKİYE ÜCRETSİZ KARGO",
-        "feature_1_desc": "Hızlı ve sigortalı teslimat ile kapınızda",
-        "feature_2_title": "%100 DOĞAL & İPEKSİ DOKU",
-        "feature_2_desc": "Nefes alan pamuk, modal ve lüks saten",
-        "feature_3_title": "KOLAY İADE & DEĞİŞİM",
-        "feature_3_desc": "14 gün koşulsuz değişim güvencesi",
-        "feature_4_title": "256-BIT SSL GÜVENLİ ÖDEME",
-        "feature_4_desc": "3D Secure ile güvenli taksitli ödeme"
       }
     },
     "product_list_fa6P9H": {
@@ -377,97 +355,159 @@
         "padding-block-end": 56
       }
     },
-    "piero_categories_grid": {
-      "type": "piero-categories-grid",
+    "collection_list_iFke6f": {
+      "type": "collection-list",
       "blocks": {
-        "cat_saten": {
-          "type": "category_item",
+        "group_hdr": {
+          "type": "group",
+          "name": "Başlık",
           "settings": {
-            "title": "Saten Pijama Takımları",
-            "subtitle": "Lüks & Dökümlü İpeksi Kumaş",
-            "badge": "Yeni Sezon"
-          }
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_title": {
+              "type": "text",
+              "name": "Başlık Metni",
+              "settings": {
+                "text": "<h3>Koleksiyonlara Göre Keşfet</h3>",
+                "type_preset": "h3",
+                "font": "var(--font-heading--family)",
+                "font_size": "1.6rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "padding-block-start": 0,
+                "padding-block-end": 12,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_title"
+          ]
         },
-        "cat_modal": {
-          "type": "category_item",
+        "static-collection-card": {
+          "type": "_collection-card",
+          "name": "Koleksiyon Kartı",
+          "static": true,
           "settings": {
-            "title": "Modal & Pamuklu Pijamalar",
-            "subtitle": "Nefes Alan Yumuşak Günlük Doku",
-            "badge": "Çok Satan"
-          }
-        },
-        "cat_sabahlik": {
-          "type": "category_item",
-          "settings": {
-            "title": "Gecelik & Sabahlık Modelleri",
-            "subtitle": "Zarif & Dökümlü Çeyizlik Tasarımlar",
-            "badge": "Lüks Seri"
-          }
-        },
-        "cat_sortlu": {
-          "type": "category_item",
-          "settings": {
-            "title": "Şortlu Pijama Takımları",
-            "subtitle": "Yazlık & Hafif Konforlu Setler",
-            "badge": "Fırsat"
-          }
-        },
-        "cat_loungewear": {
-          "type": "category_item",
-          "settings": {
-            "title": "Ev Giyimi & Loungewear",
-            "subtitle": "Evinizde Şık & Rahat Kombinler",
-            "badge": "Trend"
-          }
-        },
-        "cat_ceyiz": {
-          "type": "category_item",
-          "settings": {
-            "title": "Çeyiz & Özel Koleksiyon",
-            "subtitle": "Gelinlik & Özel Anlar İçin Takımlar",
-            "badge": "Özel Koleksiyon"
-          }
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-end",
+            "placement": "on_image",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0
+          },
+          "blocks": {
+            "collection-card-image": {
+              "type": "_collection-card-image",
+              "name": "Koleksiyon Görseli",
+              "static": true,
+              "settings": {
+                "image_ratio": "portrait"
+              },
+              "blocks": {}
+            },
+            "collection-title": {
+              "type": "collection-title",
+              "name": "Koleksiyon Başlığı",
+              "settings": {
+                "type_preset": "rte",
+                "font": "var(--font-heading--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "background": true,
+                "background_color": "#ffffff",
+                "padding-block-start": 6,
+                "padding-block-end": 6,
+                "padding-inline-start": 12,
+                "padding-inline-end": 12
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "collection-card-image",
+            "collection-title"
+          ]
         }
       },
       "block_order": [
-        "cat_saten",
-        "cat_modal",
-        "cat_sabahlik",
-        "cat_sortlu",
-        "cat_loungewear",
-        "cat_ceyiz"
+        "group_hdr"
       ],
+      "name": "Koleksiyon Listesi",
       "settings": {
-        "eyebrow": "ÖZEL SEÇKİ",
-        "heading": "Koleksiyonları Keşfet",
-        "subheading": "İpeksi satenden doğal modala, tarzınıza en uygun kadın pijama modelleri"
+        "collection_list": [],
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "columns": 3,
+        "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
+        "columns_gap": 12,
+        "bento_gap": 8,
+        "rows_gap": 16,
+        "max_collections": 6,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 24,
+        "background_color": "{{ settings.color_palette.background }}",
+        "padding-block-start": 36,
+        "padding-block-end": 48
       }
     },
-    "piero_editorial": {
-      "type": "piero-editorial",
+    "custom_liquid_h4AURX": {
+      "type": "custom-liquid",
       "settings": {
-        "eyebrow": "PIERO LOUNGE & SLEEP",
-        "heading": "Konforu ve zarafeti her gece yeniden tanımla.",
-        "paragraph_1": "Günlük hayatın koşuşturmacasını geride bıraktığınızda, teninizle buluşan yumuşaklık her şeydir. En kaliteli modal lifleri, organik pamuk ve dökümlü saten kumaşlarla tasarlanan kadın pijama koleksiyonumuzla evdeki her anınızı lükse dönüştürün.",
-        "paragraph_2": "Zahmetsiz şıklık sunan dökümlü kalıplar, dikişsiz konfor detayları ve dingin renk tonlarıyla gardırobunuzun imza pijama ve ev giyimi parçalarını keşfedin.",
-        "link_label": "Yeni Sezonu Keşfet",
-        "signature_brand": "PIERO",
-        "signature_sub": "WOMAN · PREMIUM SLEEPWEAR",
-        "show_shipping_tracker": true,
-        "shipping_eyebrow": "SİPARİŞİM NEREDE?",
-        "shipping_title": "Kargonuzu kolayca takip edin",
-        "shipping_desc": "Sipariş numaranız ve e-posta adresinizle kargo hareketlerinize saniyeler içinde ulaşın.",
-        "shipping_button_label": "Kargo Takip",
-        "shipping_note": "Türkiye’nin her yerine ücretsiz ve güvenli teslimat."
+        "custom_liquid": "<section class=\"piero-features-bar\" aria-label=\"Alışveriş Avantajları\"><div class=\"piero-features-grid\"><div class=\"piero-feature-item\"><div class=\"piero-feature-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"1\" y=\"3\" width=\"15\" height=\"13\"></rect><polygon points=\"16 8 20 8 23 11 23 16 16 16 16 8\"></polygon><circle cx=\"5.5\" cy=\"18.5\" r=\"2.5\"></circle><circle cx=\"18.5\" cy=\"18.5\" r=\"2.5\"></circle></svg></div><div class=\"piero-feature-text\"><h4>TÜM TÜRKİYE ÜCRETSİZ KARGO</h4><p>Hızlı ve sigortalı teslimat kapınızda</p></div></div><div class=\"piero-feature-item\"><div class=\"piero-feature-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z\"></path><polyline points=\"9 12 11 14 15 10\"></polyline></svg></div><div class=\"piero-feature-text\"><h4>%100 DOĞAL &amp; İPEKSİ DOKU</h4><p>Nefes alan pamuk, modal ve saten kumaş</p></div></div><div class=\"piero-feature-item\"><div class=\"piero-feature-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M2.5 2v6h6M21.5 22v-6h-6\"></path><path d=\"M22 11.5A10 10 0 0 0 3.2 7.2M2 12.5a10 10 0 0 0 18.8 4.3\"></path></svg></div><div class=\"piero-feature-text\"><h4>KOLAY İADE &amp; DEĞİŞİM</h4><p>14 gün koşulsuz değişim güvencesi</p></div></div><div class=\"piero-feature-item\"><div class=\"piero-feature-icon\"><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"11\" width=\"18\" height=\"11\" rx=\"2\" ry=\"2\"></rect><path d=\"M7 11V7a5 5 0 0 1 10 0v4\"></path></svg></div><div class=\"piero-feature-text\"><h4>256-BIT SSL GÜVENLİ ÖDEME</h4><p>3D Secure güvencesiyle taksitli alışveriş</p></div></div></div></section><section class=\"piero-editorial\" aria-labelledby=\"piero-editorial-title\"><div class=\"piero-editorial__copy\"><p class=\"piero-editorial__eyebrow\">PIERO LOUNGE &amp; SLEEP</p><h2 id=\"piero-editorial-title\">Konforu ve zarafeti her gece yeniden tanımla.</h2><p>Günlük yaşamın telaşından uzaklaşıp kendinizi şımartacağınız, teninize nefes aldıran en kaliteli modal, organik pamuk ve saten pijama koleksiyonlarımızla tanışın.</p><p>Özenle tasarlanan dökümlü kalıplar, dikişsiz konfor detayları ve zarif renk paletleriyle evdeki her anınıza lüks bir dokunuş katın.</p><a href=\"/collections/all\" class=\"piero-editorial__link\">Yeni sezonu keşfet <span aria-hidden=\"true\">→</span></a></div><div class=\"piero-editorial__visual\"><div style=\"width:100%;height:100%;min-height:500px;background:linear-gradient(135deg,#2b2b29 0%,#171715 100%);display:flex;align-items:center;justify-content:center;\"><svg width=\"80\" height=\"80\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#ffffff\" stroke-width=\"1\" opacity=\"0.3\"><path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"></path></svg></div><div class=\"piero-editorial__signature\"><strong>PIERO</strong><span>WOMAN · PREMIUM SLEEPWEAR</span></div></div></section><section class=\"piero-shipping\" aria-labelledby=\"piero-shipping-title\"><div class=\"piero-shipping__content\"><p class=\"piero-shipping__eyebrow\">SİPARİŞİM NEREDE?</p><h2 id=\"piero-shipping-title\">Kargonuzu kolayca takip edin</h2><p>Sipariş numaranız ve e-posta adresinizle kargo hareketlerinize saniyeler içinde ulaşın.</p><a class=\"piero-shipping__button\" href=\"/pages/contact\">Kargo Takip</a><small>Türkiye’nin her yerine ücretsiz ve güvenli teslimat.</small></div></section>",
+        "background_color": "{{ settings.color_palette.background }}",
+        "section_width": "page-width",
+        "padding-block-start": 24,
+        "padding-block-end": 48
       }
     }
   },
   "order": [
     "hero_jVaWmY",
     "marquee_VTww4J",
-    "piero_features_bar",
     "product_list_fa6P9H",
-    "piero_categories_grid",
-    "piero_editorial"
+    "collection_list_iFke6f",
+    "custom_liquid_h4AURX"
   ]
 }
